@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "envtamer", "src\envtamer\envtamer.csproj", "{DB782910-3C5B-4DCE-9C2A-2A0DD0B52796}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0788ADE6-0884-4D7F-9D06-67D6B2B39A34}"
+	ProjectSection(SolutionItems) = preProject
+		src\Directory.Packages.props = src\Directory.Packages.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{8FF42670-9FF7-4C56-9F40-503C554CEF1A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB782910-3C5B-4DCE-9C2A-2A0DD0B52796}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB782910-3C5B-4DCE-9C2A-2A0DD0B52796}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB782910-3C5B-4DCE-9C2A-2A0DD0B52796}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB782910-3C5B-4DCE-9C2A-2A0DD0B52796}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DB782910-3C5B-4DCE-9C2A-2A0DD0B52796} = {0788ADE6-0884-4D7F-9D06-67D6B2B39A34}
+	EndGlobalSection
+EndGlobal
