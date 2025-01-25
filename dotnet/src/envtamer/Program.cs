@@ -1,4 +1,5 @@
-﻿using envtamer.List;
+﻿using envtamer.Init;
+using envtamer.List;
 using envtamer.Pull;
 using envtamer.Push;
 using Spectre.Console;
@@ -14,6 +15,8 @@ app.Configure(config =>
         .WithDescription("Pull the contents of the env file from secure storage.");
     config.AddCommand<ListCommand>("list")
         .WithDescription("List the env variables for a specified directory.");
+    config.AddCommand<InitCommand>("init")
+        .WithDescription("Initializes the database.");
 });
 
 AnsiConsole.Write(

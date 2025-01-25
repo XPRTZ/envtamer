@@ -13,7 +13,7 @@ public class EnvTamerContext : DbContext
             ".envtamer",
             "envtamer.db"
         );
-        optionsBuilder.UseSqlite($"Data Source={dbPath}");
+        optionsBuilder.UseSqlite($"Data Source={dbPath};Mode=ReadWriteCreate");
     }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
