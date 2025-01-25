@@ -9,14 +9,14 @@ var app = new CommandApp();
 
 app.Configure(config =>
 {
-    config.AddCommand<PushCommand>("push")
-        .WithDescription("Push the contents of the env file to a secure storage.");
-    config.AddCommand<PullCommand>("pull")
-        .WithDescription("Pull the contents of the env file from secure storage.");
-    config.AddCommand<ListCommand>("list")
-        .WithDescription("List the env variables for a specified directory.");
     config.AddCommand<InitCommand>("init")
-        .WithDescription("Initializes the database.");
+        .WithDescription("Initialize the secure storage.");
+    config.AddCommand<PushCommand>("push")
+        .WithDescription("Push the contents of the env file to the secure storage.");
+    config.AddCommand<PullCommand>("pull")
+        .WithDescription("Pull the contents of the env file from the secure storage.");
+    config.AddCommand<ListCommand>("list")
+        .WithDescription("List the env variables from the secure storage for a specified directory.");
 });
 
 AnsiConsole.Write(
