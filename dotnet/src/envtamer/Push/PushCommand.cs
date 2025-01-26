@@ -26,14 +26,14 @@ public class PushCommand : Command<PushCommand.Settings>
 
         if (!File.Exists(fullPath))
         {
-            Console.WriteLine($"Error: .env file not found at {fullPath}");
+            Console.WriteLine($"🛑 Error: .env file not found at {fullPath}");
             return 1;
         }
 
         var envContents = readEnvFile(fullPath);
         storeEnvContents(sanitizedDirectory, envContents);
 
-        Console.WriteLine($"Successfully pushed .env contents for {directory}");
+        Console.WriteLine($"✅ Successfully pushed .env contents for {directory}");
 
         return 0;
     }
