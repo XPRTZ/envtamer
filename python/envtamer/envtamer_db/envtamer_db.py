@@ -39,7 +39,7 @@ class EnvTamerDb:
             print('🛑 Init went wrong')
             raise
 
-    def save_env_values(self, directory, variables):
+    def save_env_values(self, directory: str, variables: dict):
         try:
             if self.engine is None:
                 self.ensure_db()
@@ -62,7 +62,7 @@ class EnvTamerDb:
             print('🛑 save envs went wrong')
             raise
 
-    def save_env_value(self, directory, key, value):
+    def save_env_value(self, directory: str, key: str, value: str):
         try:
             if self.engine is None:
                 self.ensure_db()
@@ -83,7 +83,7 @@ class EnvTamerDb:
             print('🛑 save env went wrong:')
             raise
 
-    def get_env_value(self, directory, key):
+    def get_env_value(self, directory: str, key: str):
         try:
             if self.engine is None:
                 self.ensure_db()
@@ -94,7 +94,7 @@ class EnvTamerDb:
             print('🛑 get env went wrong:')
             raise
 
-    def get_env_values(self, directory):
+    def get_env_values(self, directory: str):
         try:
             if self.engine is None:
                 self.ensure_db()
@@ -116,7 +116,7 @@ class EnvTamerDb:
             print('🛑 get all directories went wrong:')
             raise
 
-    def delete_value(self, directory, key):
+    def delete_value(self, directory: str, key: str):
         try:
             if self.engine is None:
                 self.ensure_db()
@@ -130,7 +130,7 @@ class EnvTamerDb:
             print('🛑 delete env went wrong:')
             raise
 
-    def delete_values(self, directory):
+    def delete_values(self, directory: str):
         try:
             if self.engine is None:
                 self.ensure_db()

@@ -1,10 +1,13 @@
 import os
 
+from envtamer_db.env_variable import EnvVariable
+
+
 class FileHandler:
-    def __init__(self, path):
+    def __init__(self, path: str):
         self.path = path
 
-    def read_env_file(self, file_name):
+    def read_env_file(self, file_name: str):
         full_path = os.path.join(self.path, file_name)
         if os.path.exists(full_path):
             env_vars = {}
@@ -16,7 +19,7 @@ class FileHandler:
         else:
             print(f'.env file path: {full_path} not found.')
 
-    def write_env_file(self, file_name, env_vars):
+    def write_env_file(self, file_name: str, env_vars: dict[EnvVariable]):
         full_path = os.path.join(self.path, file_name)
 
         if os.path.exists(full_path):

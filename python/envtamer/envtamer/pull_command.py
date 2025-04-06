@@ -3,7 +3,7 @@ import os
 from envtamer_db.envtamer_db import EnvTamerDb
 from envtamer.file_handler import FileHandler
 
-def pull_command(directory, path):
+def pull_command(directory: str, path: str):
     try:
         if directory is None:
             directory = os.getcwd()
